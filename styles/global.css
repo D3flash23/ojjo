@@ -1,0 +1,56 @@
+:root {
+	--color-text: #fafafa;
+	--background-header: url("/img/bgc.jpeg");
+	--layout-width: 1110px;
+}
+
+html,
+body {
+	font-family: "Girloy", sans-serif;
+
+	height: 100%;
+
+
+* {
+	box-sizing: border-box;
+	list-style: none;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+img {
+		display: block;
+		max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}

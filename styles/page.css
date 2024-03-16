@@ -1,0 +1,39 @@
+.wrapper {
+	background: var(--background-header) center top no-repeat;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.divider::after {
+	content: "";
+	display: block;
+	border: 1px solid rgb(255, 255, 255);
+	margin: 0;
+}
+.brands {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding: 30px 0 30px 0;
+}
+/* Стили для контейнера, который содержит разделенный контент */
+.brands__screen {
+	display: flex;
+	align-items: center; /* Выравнивание элементов по вертикали, если это необходимо */
+	position: relative; /* Относительное позиционирование для псевдоэлемента */
+}
+
+/* Стили для псевдоэлемента, который будет вертикальной линией */
+.brands__screen::before {
+	content: ""; /* Псевдоэлементы требуют свойства content */
+	position: absolute;
+	left: 110%; /* Расположение линии посередине контейнера */
+	transform: translateX(-50%); /* Центрирование линии */
+	height: 100%; /* Высота линии равна высоте контейнера */
+	width: 1px; /* Ширина линии */
+	background-color: #ccc; /* Цвет линии */
+}
